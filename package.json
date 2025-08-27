@@ -1,7 +1,7 @@
 {
   "name": "about",
   "author": "Louis Clemente",
-  "license":"MIT",
+  "license": "MIT",
   "type": "module",
   "private": true,
   "version": "0.0.1",
@@ -10,11 +10,19 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint:eslint": "eslint '*.{ts,vue}'",
+    "lint:prettier": "prettier --check '*.{ts,vue,json}'"
   },
   "dependencies": {
     "nuxt": "^4.0.3",
     "vue": "^3.5.20",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.4.0",
+    "prettier": "^3.6.2"
   }
 }
