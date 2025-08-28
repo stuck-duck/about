@@ -36,6 +36,19 @@ export default defineConfig([
       globals: { ...globals['shared-node-browser'] },
       parser: vueParser,
     },
+    plugins: {
+      'simple-import-sort': simpleImportSort,
+    },
+    rules: {
+      'vue/multi-word-component-names': [
+        'error',
+        {
+          ignores: ['index'],
+        },
+      ],
+      'simple-import-sort/imports': 'error',
+      'simple-import-sort/exports': 'error',
+    },
   },
   {
     files: ['**/*.json'],
