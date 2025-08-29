@@ -43,7 +43,7 @@ export default defineConfig([
       'vue/multi-word-component-names': [
         'error',
         {
-          ignores: ['index'],
+          ignores: ['index', 'default'],
         },
       ],
       'simple-import-sort/imports': 'error',
