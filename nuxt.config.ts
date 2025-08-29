@@ -1,4 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { fileURLToPath } from 'node:url';
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -12,5 +13,8 @@ export default defineNuxtConfig({
       { code: 'en-us', name: 'English', file: 'en-us.json' },
       { code: 'de-de', name: 'Germany', file: 'de-de.json' },
     ],
+  },
+  alias: {
+    style: fileURLToPath(new URL('./assets/style', import.meta.url)),
   },
 });
