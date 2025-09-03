@@ -5,7 +5,8 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
 }
 
 html,
@@ -15,4 +16,20 @@ body,
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.button-no-border {
+  border: none;
+  text-transform: uppercase;
+  padding: 4px;
+  color: var(--secondary-text-color);
+}
+
+.button-no-border:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button-no-border-active {
+  font-weight: bolder;
 }

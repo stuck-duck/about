@@ -1,7 +1,10 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="header content-start">Header</div>
+  <div class="header content-space-between">
+    Header
+    <i18n-language-picker-component />
+  </div>
 </template>
 
 <style lang="scss">
