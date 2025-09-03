@@ -27,6 +27,6 @@ import {
 }
 
 .footer {
-  min-height: 40px;
+  min-height: 20px;
 }
 </style>
