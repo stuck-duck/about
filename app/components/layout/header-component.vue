@@ -1,9 +1,11 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { I18nLanguagePickerComponent, LayoutLogoComponent } from '#components';
+</script>
 
 <template>
   <div class="header content-space-between">
-    Header
-    <i18n-language-picker-component />
+    <LayoutLogoComponent />
+    <I18nLanguagePickerComponent />
   </div>
 </template>
 

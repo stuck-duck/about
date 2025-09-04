@@ -1,3 +1,21 @@
+@use './variables.scss';
+
 * {
-  font-family: monospace;
+  font-family: 'Lucida Console', 'Courier New', monospace;
+  font-size: var(--default-font-size);
+}
+
+h1 {
+  font-size: var(--largest-font-size);
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: var(--large-font-size);
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: var(--medium-font-size);
+  font-weight: bolder;
 }
