@@ -21,6 +21,6 @@ const { locale: currentLocale, locales, setLocale } = useI18n();
 <style lang="scss">
 .language-picker-buttons {
   display: flex;
-  gap: 4px;
+  gap: 8px;
 }
 </style>
