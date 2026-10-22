@@ -1,39 +1,38 @@
 <script lang="ts" setup>
-import content from '../../../i18n/locales/en-us.json';
-
-const { bulletsIndex = 0 } = defineProps({ bulletsIndex: Number });
+defineProps<{
+  heading: string;
+  from: string;
+  to: string;
+  descriptions: string[];
+  skills: string[];
+}>();
 </script>
 
 <template>
   <div class="flex start row">
     <p class="flex flex-1 time-range">
-      {{ $t(`cv.bullets.${bulletsIndex}.from`) }} -
-      {{ $t(`cv.bullets.${bulletsIndex}.to`) }}
+      {{ from }} -
+      {{ to }}
     </p>
     <div class="flex flex-1 start column">
-      <b>{{ $t(`cv.bullets.${bulletsIndex}.heading`) }}</b>
+      <b>{{ heading }}</b>
       <ul>
         <li
-          v-for="(_description, descriptionsIndex) in content.cv.bullets.at(
-            bulletsIndex,
-          )?.descriptions"
-          :key="descriptionsIndex"
+          v-for="(description, descriptionIndex) in descriptions"
+          :key="descriptionIndex"
         >
-          {{
-            $t(`cv.bullets.${bulletsIndex}.descriptions.${descriptionsIndex}`)
-          }}
+          {{ description }}
         </li>
       </ul>
       <div class="flex start row">
         <div
-          v-for="(_skill, skillIndex) in content.cv.bullets.at(bulletsIndex)
-            ?.skills"
+          v-for="(skill, skillIndex) in skills"
           :key="skillIndex"
           class="skills-item"
         >
           <div class="flex start row">
             <p class="secondary-font-color">
-              {{ $t(`cv.bullets.${bulletsIndex}.skills.${skillIndex}`) }}
+              {{ skill }}
             </p>
             <p class="list-dot">&#x2022;</p>
           </div>
