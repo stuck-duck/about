@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { useI18n } from '#imports';
-
 const { locale: currentLocale, locales, setLocale } = useI18n();
 </script>
 

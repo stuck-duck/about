@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   imports: {
-    autoImport: false,
+    autoImport: true,
   },
   modules: ['@nuxtjs/i18n'],
   i18n: {

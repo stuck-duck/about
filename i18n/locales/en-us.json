@@ -5,27 +5,20 @@
   },
   "cv": {
     "timeline": "Timeline",
-    "bullets": [
-      {
+    "bullets": {
+      "0": {
         "heading": "test",
         "from": "01.01.2000",
         "to": "Today",
-        "descriptions": [
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-          "At vero eos et accusam et justo duo dolores et ea rebum. Stetclita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-        ],
-        "skills": ["Lorem", "ipsum", "dolor"]
-      },
-      {
-        "heading": "test",
-        "from": "01.01.1900",
-        "to": "21.12.1999",
-        "descriptions": [
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-          "At vero eos et accusam et justo duo dolores et ea rebum. Stetclita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-        ],
-        "skills": ["Lorem", "ipsum", "dolor"]
+        "descriptions": {
+          "0": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        },
+        "skills": {
+          "0": "Lorem",
+          "1": "ipsum",
+          "2": "dolor"
+        }
       }
-    ]
+    }
   }
 }
