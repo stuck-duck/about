@@ -1,10 +1,10 @@
 {
   "name": "about",
-  "author": "Louis Clemente",
-  "license": "MIT",
-  "type": "module",
-  "private": true,
   "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "Louis Clemente",
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -12,7 +12,10 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint . && npx eslint . ",
-    "lint:write": "prettier . --write"
+    "lint:write": "prettier . --write",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "sdc": "oxfmt --init"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^10.6.0",
@@ -31,7 +34,7 @@
     "eslint-plugin-vue": "^10.11.1",
     "globals": "^17.13.0",
     "jiti": "^2.7.0",
-    "prettier": "^3.9.10",
+    "oxfmt": "^0.74.0",
     "sass-embedded": "^1.106.1",
     "typescript": "^7.0.2",
     "typescript-eslint": "^8.72.0",
