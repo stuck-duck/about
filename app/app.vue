@@ -1,7 +1,3 @@
-<script lang="ts" setup>
-import { NuxtLayout } from '#components';
-</script>
-
 <template>
   <NuxtLayout />
 </template>
