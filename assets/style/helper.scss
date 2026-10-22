@@ -1,20 +1,46 @@
-.content-start {
+.flex {
   display: flex;
+  gap: 16px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.start {
   align-items: start;
   justify-content: start;
-  padding: 16px;
 }
 
-.content-center {
-  display: flex;
+.cross-start {
+  align-items: start;
+}
+
+.main-start {
+  justify-content: start;
+}
+
+.center {
   align-items: center;
   justify-content: center;
-  padding: 16px;
 }
 
-.content-space-between {
-  display: flex;
+.cross-center {
   align-items: center;
+}
+
+.main-center {
+  justify-content: center;
+}
+
+.space-between {
   justify-content: space-between;
-  padding: 16px;
 }

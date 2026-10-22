@@ -5,7 +5,7 @@ const { locale: currentLocale, locales, setLocale } = useI18n();
 </script>
 
 <template>
-  <div class="language-picker-buttons">
+  <div class="flex start row">
     <button
       v-for="locale in locales"
       :key="locale.code"
@@ -13,14 +13,7 @@ const { locale: currentLocale, locales, setLocale } = useI18n();
       :class="{ 'button-no-border-active': currentLocale === locale.code }"
       @click="setLocale(locale.code)"
     >
-      {{ locale.name }}
+      {{ $t(`locales.${locale.code}`) }}
     </button>
   </div>
 </template>
-
-<style lang="scss">
-.language-picker-buttons {
-  display: flex;
-  gap: 8px;
-}
-</style>

@@ -48,6 +48,8 @@ export default defineConfig([
       ],
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
+      'vue/singleline-html-element-content-newline': 'off',
+      'vue/multiline-html-element-content-newline': 'off',
     },
   },
   {

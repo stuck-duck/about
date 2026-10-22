@@ -3,6 +3,11 @@
 * {
   font-family: 'Lucida Console', 'Courier New', monospace;
   font-size: var(--default-font-size);
+  color: var(--primary-text-color);
+}
+
+.secondary-font-color {
+  color: var(--secondary-text-color);
 }
 
 h1 {
@@ -18,4 +23,10 @@ h2 {
 h3 {
   font-size: var(--medium-font-size);
   font-weight: bolder;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 8px;
 }
