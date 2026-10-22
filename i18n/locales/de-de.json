@@ -1,3 +1,31 @@
 {
-  "welcome": "Wilkommen"
+  "locales": {
+    "en-us": "englisch",
+    "de-de": "deutsch"
+  },
+  "cv": {
+    "timeline": "Zeitstrahl",
+    "bullets": [
+      {
+        "heading": "test",
+        "from": "01.01.2000",
+        "to": "Heute",
+        "descriptions": [
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "At vero eos et accusam et justo duo dolores et ea rebum. Stetclita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        ],
+        "skills": ["Lorem", "ipsum", "dolor"]
+      },
+      {
+        "heading": "test",
+        "from": "01.01.1900",
+        "to": "21.12.1999",
+        "descriptions": [
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+          "At vero eos et accusam et justo duo dolores et ea rebum. Stetclita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        ],
+        "skills": ["Lorem", "ipsum", "dolor"]
+      }
+    ]
+  }
 }
