@@ -43,7 +43,7 @@ const { bulletsIndex = 0 } = defineProps({ bulletsIndex: Number });
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .time-range {
   max-width: 150px;
   text-transform: uppercase;

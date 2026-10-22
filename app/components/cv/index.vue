@@ -5,7 +5,7 @@ import content from '../../../i18n/locales/en-us.json';
 <template>
   <div class="flex start column">
     <h1>{{ $t('cv.timeline') }}</h1>
-    <CvBulletComponent
+    <CvBullet
       v-for="(_bullet, index) in content.cv.bullets"
       :key="_bullet.heading"
       :bullets-index="index"
