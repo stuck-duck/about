@@ -82,5 +82,5 @@ export default defineConfig([
     language: 'css/css',
     extends: ['css/recommended'],
   },
-  globalIgnores(['package-lock.json', '.nuxt']),
+  globalIgnores(['package-lock.json', '.nuxt', '.output']),
 ]);
