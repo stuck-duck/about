@@ -1,0 +1,32 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["import", "node", "vitest", "vue", "typescript", "unicorn"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn",
+    "pedantic": "off"
+  },
+  "rules": {
+    "eslint/no-debugger": "error",
+    "prefer-const": "error",
+    "no-param-reassign": "error",
+    "no-console": "error",
+    "eslint/no-constant-condition": "error",
+    "eslint/no-dupe-keys": "error",
+    "eslint/no-duplicate-imports": "error",
+    "eslint/no-unreachable": "error",
+    "eslint/no-unused-vars": "error",
+    "import/no-cycle": "error",
+    "import/no-duplicates": "error",
+    "typescript/no-explicit-any": "warn",
+    "typescript/no-floating-promises": "error"
+  },
+  "env": {
+    "builtin": true
+  },
+  "options": {
+    "typeAware": true,
+    "typeCheck": true
+  }
+}
